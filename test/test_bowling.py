@@ -30,5 +30,5 @@ class TestBowlingGame(unittest.TestCase):
         game.add_frame(Frame(8, 1))
         game.add_frame(Frame(2, 6))
         f = Frame(2,6)
-        self.assertRaises(BowlingError,game.add_frame, Frame(2,6))
+        self.assertRaises(BowlingError,game.add_frame, Frame(1,1))
     # def test_calculate_score(self):
